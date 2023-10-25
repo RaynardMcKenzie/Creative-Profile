@@ -1,0 +1,993 @@
+/*
+COLORS:
+
+    golden-yellow: #fdc300;
+    dark-gray: #3b3b3b;
+    granite-gray: #5f5f5f
+    dark-orange: #d86411;
+    warm-orange: #ce2e09;
+   
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    /* font-family: 'Cantarell', sans-serif; */
+    width: 95vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(74, 188, 188, 0.801);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+}
+
+.navContainer {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLeft {
+    width: 40%;
+    height: 80px;
+    padding-left: 20px;
+}
+
+.logoContainer {
+    width: 180px;
+    height: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navRight {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 600;
+    list-style: none;
+}
+
+.linkItems{    
+    color: #8fff;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.linkItems:hover {
+    color: #8ddd;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    /* font-weight: 800; */
+    transform: scale(0.90);
+    /* transition: 0px; */
+}
+
+.myHomeSection {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.059),
+        rgba(68, 68, 68, 0.699)
+       
+    ), url(images/myServiceImg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.myHomeSectionContainer {
+    width: 100vw;
+    /* height: 90vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myHomeLeftSectionContainer {
+    width: 40%;
+    /* height: 98%; */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myHomeImg {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-radius: 100px;
+}
+
+.myHomeToFooterSectionButton {
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.myHomeToFooterSectionButton i {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    list-style: none;
+    color: #07afaf;
+}
+
+.myHomeToFooterSectionButton i:hover {
+    font-size: 80px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.arrow-down {
+    text-align: center;
+    border-bottom: 2px solid #07afaf;
+    margin-top: 150px;
+}
+
+.myImgContainer {
+    width: 80%;
+    height: 70vh;
+}
+
+.homeImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 300px;
+    /* margin-top: -10px; */
+    background-color: rgba(136, 255, 255, 0.695);
+}
+
+.myHomeRightSectionContainer {
+    width: 58%;
+    /* height: 98%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myHomeSectionTexting {
+    width: 80%;
+    /* height: 90%; */
+    padding: 80px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.myHomeSectionInfoTitle {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    text-align: left;
+    color: rgb(34, 34, 34);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+}
+
+.myHomeSectionInfoParagraph {
+    padding: 0 40px 0 20px;
+    line-height: 1.7;
+    letter-spacing: 0.45px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(34, 34, 34);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+
+strong {
+    font-size: 20px;
+    color: #fff;
+}
+
+strong:hover {
+    cursor: pointer;
+    color: #07afaf;
+}
+
+.mySectionsSocialInfoBrands {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    right: 0;
+}
+
+.mySocialInfoBrand {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+    border-radius: 30px;
+    background-color: #57d9d9dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mySocialInfoBrand:hover {
+    background-color: transparent;
+}
+    
+.socialBrand {
+        font-size: 24px;
+        color: #3e3e3e;
+    }
+
+.socialBrand:hover {
+    transform: rotate(22.5deg);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.myAboutSection {
+    width: 100vw;
+    /* height: 800px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myAboutSectionContainer {
+    width: 94vw;
+    /* height: 600px; */
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myAboutSectionLeftContainer {
+    width: 40%;
+    /* height: 100%; */
+}
+
+.myAboutSectionHeadline {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.myAboutSectionHeadline i {
+    font-size: 30px;
+    color: #07afaf;
+}
+
+.myAboutHeadline {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 20px; 
+    color: rgb(34, 34, 34);
+}
+
+.aboutHeading {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin-top: 20px;
+}
+
+.myAboutSectionParagraph {
+    /* width: 50%; */
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+    box-shadow: 2px;
+    padding: 40px 100px;
+    color: gray;
+}
+
+.myAboutSectionRightContainer {
+    width: 34%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.myAboutSectionRightImgContainer {
+    width: 90%;
+    height: 95vh;
+}
+
+.myAboutImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
+
+.myWorkSection {
+    width: 100vw;
+    /* height: 100vh; */
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myWorkSectionContainer {
+    width: 85vw;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.myWorkSectionLeftContainer {
+    width: 65%;
+    /* height: 94%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myWorkSectionTopContainer {
+    width: 98%;
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myWorkSectionBottomContainer {
+    width: 98%;
+    height: 50vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myWorkSectionImgContainer {
+    width: 48%;
+    height: 100%;
+    position: relative;
+}
+
+.myWorkSectionImgContainer:hover .myWorkImg {
+    transform: scale(0.5);
+}
+
+.myWorkSectionImgContainer:hover .myWorkPopUpButton {
+   opacity: 1;
+}
+
+.myWorkImg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    object-fit: cover;
+    object-fit: center;
+}
+
+.myWorkPopUpButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#a9b1b1f9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    border: none;
+    border-radius: 400px;
+}
+
+.myWorkSectionLinkButton {
+    font-family: 'Haettenschweiler', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #005858;
+}
+
+.myWorkSectionRightContainer {
+    width: 46%;
+    /* height: 94%; */
+    padding-left: 50px;
+}
+
+.myWorkSectionHeadline {
+    width: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.myWorkSectionHeadline i {
+    font-size: 30px;
+    color: #07afaf;
+}
+
+.myWorkHeadline {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 20px; 
+    color: rgb(34, 34, 34);
+}
+
+.workHeading {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin-top: 20px;
+}
+
+.myWorkSectionParagraph {
+    /* width: 60%;
+    height: 50%; */
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+    padding: 40px 100px;
+    color: gray;
+}
+
+.myServiceSection {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myServiceSectionContainer {
+    width: 95vw;
+    /* height: 100vh; */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myServiceSectionTopContainer {
+    width: 100%;
+    /* height: 21vh; */
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.myServiceSectionTitleContainer {
+    width: 100px;
+    height: 60px;
+}
+
+.myServiceSectionTitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myServiceSectionHeadingContainer {
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.myServiceSectionHeading {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    color: rgb(34, 34, 34);
+}
+
+.myServiceSectionBottomContainer {
+    width: 100%;
+    /* height: 75vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myServiceSectionCardsWrapper {
+    width: 95%;
+    padding: 20px;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myServiceSectionCard {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #005858;
+}
+
+.myServiceHeading {
+    margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.myServiceAssistance {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: rgb(34, 34, 34);
+}
+
+.myServiceImgContainer {
+    width: 100%;
+    height: 250px;
+}
+
+.myServiceImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.myServiceCardText {
+    width: 98%;
+    /* margin-top: 10px; */
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myServiceParagraph {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.myServiceButton {
+    margin-bottom: 20px;
+    padding: 15px 35px;
+    font-family: 'Source Sans 3', sans-serif;
+    border: none;
+    font-weight: 600;
+    background-color: #8d8d8d;
+    border-radius: 6px;
+}
+
+.myServiceButton:hover {
+    background-color: #07afaf;
+    cursor: pointer;
+    color: #fff;
+}
+
+.myContactSection {
+    width: 100vw;
+    /* height: 100vh; */
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myContactSectionContainer {
+    width: 90vw;
+    /* height: 98vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myLeftContactSectionContainer {
+    width: 60%;
+    /* height: 98vh; */
+    padding-left: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.myTopLeftContactSectionContainer {
+    width: 98%;
+    /* height: 45%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myContactTitleContainer {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myContactTitle {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+}
+
+.myContactTitleContainer .myContactTitle i {
+    font-size: 30px;
+    color: #07afaf;
+}
+
+.myContactHeadingContainer {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myContactHeading {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+}
+
+.myOfficeImgContainer {
+    width: 500px;
+    height: 180px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.myOfficeImg {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
+
+.myContactFormSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+}
+
+.myLocation {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 33%;
+    right: 33%; 
+    z-index: 1;
+    padding: 10px 25px;
+    background-color: #57d9d9dd;
+    border-radius: 10px;
+}
+
+.myLocation:hover {
+    background-color: #c9c9c9;
+    color: #fff;
+    font-size: 32px;
+}
+
+.myContactClickForm {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.myContactOfficeLocationContainer {
+    width: 98%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.myContactLocationContainer {
+    width: 100%;
+    height: 220px;
+    margin: 30px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.myContactParagraph {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: justify;
+    color: rgb(34, 34, 34);
+    padding: 40px;
+}
+
+.myContactFindMeLocationButton {
+    padding: 10px 45px;
+    margin-top: 30px;
+    font-family: 'Source Sans 3', sans-serif;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #8d8d8d;
+    border-radius: 6px;
+}
+
+.myContactFindMeLocationButton:hover {
+    background-color: #07afaf;
+    cursor: pointer;
+    color: #fff;
+}
+
+.myRightContactSectionContainer {
+    width: 39%;
+    /* height: 98vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myContactMapSection {
+    margin-top: 4px;
+}
+
+.myFooterSection {
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #07afaf;
+    background-color: #8fff;
+}
+
+.myFooterSectionContainer {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myLeftFooterSectionContactUsContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myLeftFooterSearchSectionContainer {
+    width: 90%;
+    /* height: 98%; */
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myFooterToHomeSectionButton {
+    width: 20%;
+    /* height: 100%; */
+    padding-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+.myFooterToHomeSectionButton i {
+    width: 70px;
+    height: 80px;
+    margin-top: 10px;
+    font-size: 50px;
+    list-style: none;
+    color: #07afaf;
+}
+
+.myFooterToHomeSectionButton i:hover {
+    font-size: 80px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.arrow-up {
+    border-top: 2px solid #07afaf;
+}
+
+.myFooterLinksSection {
+    width: 68%;
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterSearch {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid #07afaf;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Footerlinks {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.footerLink {
+    color: #07afaf;
+    font-size: 16px;
+    line-height: 1.9;
+    list-style: none;
+}
+
+.footerLink:hover {
+    color: #8d8d8d;
+    font-weight: 600;
+}
+
+.myFooterRightSectionContainer {
+    width: 56%;
+    /* height: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myFooterSectionParagraph {
+    width: 58%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterParagraph {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.myFooterLogoSection {
+    width: 150px;
+    height: 150px;
+}
+
+.myFooterLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.myBottomFooterSection {
+    width: 100vw;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myBottomFooterCopyrightsContainer {
+    width: 90vw;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooterCopyrights {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
