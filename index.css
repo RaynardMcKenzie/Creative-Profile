@@ -122,7 +122,7 @@ a:hover {
         rgba(0, 0, 0, 0.059),
         rgba(68, 68, 68, 0.699)
        
-    ), url(images/myServiceImg1.jpg);
+    ), url(myServiceImg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
