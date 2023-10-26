@@ -39,7 +39,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(74, 188, 188, 0.801);
+    background-color:  #4abcbccc;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -198,7 +198,7 @@ a:hover {
     object-position: center;
     border-radius: 300px;
     /* margin-top: -10px; */
-    background-color: rgba(136, 255, 255, 0.695);
+    background-color:  #88ffffb1;
 }
 
 .myHomeRightSectionContainer {
@@ -225,7 +225,7 @@ a:hover {
     margin-bottom: 20px;
     padding: 0 20px 0 20px;
     text-align: left;
-    color: rgb(34, 34, 34);
+    color: #222222;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
 }
@@ -236,7 +236,7 @@ a:hover {
     letter-spacing: 0.45px;
     font-size: 22px;
     margin-bottom: 20px;
-    color: rgb(34, 34, 34);
+    color: #222222;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
 }
@@ -331,14 +331,14 @@ strong:hover {
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
     margin-left: 20px; 
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .aboutHeading {
     font-family: 'Fira Sans', sans-serif;
     font-size: 45px;
     font-weight: 900;
-    color: rgb(34, 34, 34);
+    color: #222222;
     margin-top: 20px;
 }
 
@@ -447,7 +447,7 @@ strong:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#a9b1b1f9;
+    background-color: #a9b1b1f9;
     position: absolute;
     top: 0;
     right: 0;
@@ -493,14 +493,14 @@ strong:hover {
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
     margin-left: 20px; 
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .workHeading {
     font-family: 'Fira Sans', sans-serif;
     font-size: 45px;
     font-weight: 900;
-    color: rgb(34, 34, 34);
+    color: #222222;
     margin-top: 20px;
 }
 
@@ -550,7 +550,7 @@ strong:hover {
 .myServiceSectionTitle {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
-    color: rgb(34, 34, 34);
+    color: #222222;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -567,7 +567,7 @@ strong:hover {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
     font-size: 45px;
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .myServiceSectionBottomContainer {
@@ -604,7 +604,7 @@ strong:hover {
 .myServiceAssistance {
     font-size: 28px;
     margin-bottom: 10px;
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .myServiceImgContainer {
@@ -704,7 +704,7 @@ strong:hover {
     justify-content: space-between;
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .myContactTitleContainer .myContactTitle i {
@@ -724,7 +724,7 @@ strong:hover {
     font-family: 'Fira Sans', sans-serif;
     font-size: 45px;
     font-weight: 900;
-    color: rgb(34, 34, 34);
+    color: #222222;
 }
 
 .myOfficeImgContainer {
