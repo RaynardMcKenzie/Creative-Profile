@@ -678,6 +678,7 @@ strong:hover {
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+    position: relative;
 }
 
 .myTopLeftContactSectionContainer {
@@ -731,7 +732,6 @@ strong:hover {
     width: 500px;
     height: 180px;
     margin-left: 100px;
-    position: relative;
 }
 
 .myOfficeImg {
