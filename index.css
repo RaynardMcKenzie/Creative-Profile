@@ -678,7 +678,6 @@ strong:hover {
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
-    position: relative;
 }
 
 .myTopLeftContactSectionContainer {
@@ -753,6 +752,7 @@ strong:hover {
     justify-content: center;
     border: none;
     background: none;
+    position: relative;
 }
 
 .formButton {
